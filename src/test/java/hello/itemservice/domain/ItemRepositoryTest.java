@@ -35,7 +35,6 @@ class ItemRepositoryTest {
         // 트랜잭션 시작
         status = transactionManager.getTransaction(new DefaultTransactionDefinition());
     }
-
      */
 
     @AfterEach
@@ -48,9 +47,10 @@ class ItemRepositoryTest {
         //transactionManager.rollback(status);
     }
 
-    @Test
+
 //    @Transactional
 //    @Commit
+    @Test
     void save() {
         //given
         Item item = new Item("itemA", 10000, 10);
